@@ -133,7 +133,7 @@ button {
 .main-content {
     padding: 15px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #bbf7d0;
     gap: 15px;
 }
@@ -142,7 +142,7 @@ button {
     grid-row: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50.5px repeat(3, minmax(240px, 1fr));
+    grid-template-rows: 50.5px repeat(auto-fill, minmax(220px, 280px));
     gap: 15px;
 }
 
@@ -160,7 +160,7 @@ button {
 .title {
     grid-column: 1 / 3;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
 }
 
@@ -206,4 +206,38 @@ button {
     font-size: 16px;
     margin: 0px;
     margin-top: 16px;
+}
+
+.all-profiles {
+    background-color: white;
+    padding: 16px 32px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(178, 176, 176, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 60px 120px;
+    grid-template-rows: 30px 30px;
+    grid-column-gap: 32px;
+    margin: 8px 0px;
+    align-items: center;
+}
+
+.profile img {
+    grid-row: 1 / 3;
+    align-self: end;
+}
+
+.profile p:nth-child(2){
+    font-weight: bold;
+    align-self: start;
+}
+
+.profile p:nth-child(3){
+    color: gray;
 }
