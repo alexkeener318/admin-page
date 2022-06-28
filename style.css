@@ -1,0 +1,21 @@
+* {
+    border: 3px solid red;
+    margin: 0px;
+}
+
+.container {
+    height: 100vh; /* this and the following line are temporary*/
+    width: 100vw;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header{
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+}
