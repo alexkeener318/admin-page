@@ -3,8 +3,8 @@
 }
 
 .container {
-    height: 100vh; /* this and the following line are temporary*/
-    width: 100vw;
+    /* height: 100vh; /* this and the following line are temporary
+    width: 100vw; */
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
@@ -18,11 +18,26 @@
 
 input {
     border-radius: 15px;
-    width: 45%;
+    width: 65%;
     font-size: 20px;
 }
 
 .sidebar {
     grid-row: 1 / 3;
     display: grid;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title {
+    grid-column: 1 / 3;
 }
