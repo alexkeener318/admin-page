@@ -90,7 +90,45 @@ button {
     display: grid;
     background-color: #10b981;
     color: white;
+    grid-template-rows: 40px 20% 10%;
+    gap: 125px;
 }
+
+.dashboard {
+    display: grid;
+   grid-template-columns: 40px 1fr;
+   align-items: center;
+   font-size: 32px;
+   grid-column-gap: 32px;
+}
+
+.dashboard p {
+    margin: 16px 0px;
+}
+
+.dashboard svg {
+    align-self: center;
+    margin-left: 16px;
+}
+
+.options, .settings {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-content: center;
+    font-size: 28px;
+    margin: 0px;
+    grid-column-gap: 32px;
+}
+
+.options p, .settings p{
+    margin: 10px;
+}
+
+.options svg, .settings svg {
+    align-self: center;
+    margin-left: 16px;
+}
+
 
 .main-content {
     padding: 15px;
