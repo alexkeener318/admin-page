@@ -141,8 +141,8 @@ button {
 .projects {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50.5px repeat(auto-fill, minmax(220px, 280px));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: 50.5px repeat(auto-fill, minmax(200px, 240px));
     gap: 15px;
 }
 
@@ -176,7 +176,7 @@ button {
 
 .icons {
     color: black;
-    margin-top: 48px;
+    margin-top: max(0px,15%);
     display: flex;
     justify-content: end;
     align-self: flex-end;
@@ -188,16 +188,17 @@ button {
     padding: 16px 32px;
     border-radius: 16px;
     box-shadow: 5px 5px 5px rgba(178, 176, 176, 0.6);
+    color: gray;
 }
 
 .card.one, .card.two {
     border-bottom: 1px solid lightgray;
 }
 
-.announcements .card p {
+.announcements .card:nth-child(2) {
     font-size: 14px;
     margin-top: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     color: gray;
 }
 
